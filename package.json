@@ -1,0 +1,40 @@
+{
+  "name": "datamapper2",
+  "version": "2.0.0",
+  "description": "Data Mapper TNG",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "build": "webpack",
+    "preserve": "npm run build -- --mode development",
+    "serve": "serve dist",
+    "watch": "nodemon --exec npm run serve --watch src/"
+  },
+  "keywords": [
+    "odileeds",
+    "data",
+    "mapper",
+    "geojson"
+  ],
+  "author": "Giles Dring <giles.dring@odileeds.org>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.18.6",
+    "serve": "^10.0.2",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "eslintIgnore": [
+    "dist/datamapper.js"
+  ]
+}
